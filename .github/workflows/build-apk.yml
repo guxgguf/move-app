@@ -17,10 +17,9 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - uses: android-actions/setup-android@v3
-
       - name: Install SDK, NDK and CMake
         run: |
+          yes | sdkmanager --licenses > /dev/null || true
           sdkmanager "platforms;android-34" "build-tools;34.0.0" "cmake;3.22.1" "ndk;25.1.8937393"
 
       - uses: gradle/actions/setup-gradle@v3
