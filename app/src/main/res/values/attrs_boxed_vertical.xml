@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BoxedVertical">
+        <attr name="bvBackgroundColor" format="color" />
+        <attr name="bvProgressColor" format="color" />
+        <attr name="bvCornerRadius" format="dimension" />
+        <attr name="bvDefaultValue" format="integer" />
+        <attr name="bvMin" format="integer" />
+        <attr name="bvMax" format="integer" />
+        <attr name="bvTouchDisabled" format="boolean" />
+    </declare-styleable>
+</resources>
